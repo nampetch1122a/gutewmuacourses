@@ -474,7 +474,7 @@ footer strong{color:var(--cyan)}
 </div>
 
 <script>
-const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzM2YuPvOFjQZAJns5kMdhWAXCINF8d5wyWqDkv-9nUbw0-9BmTq6RTUjLr5s2iwm4I/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbz54fCrTXuYKY8vroWYmCgoMZ6Myjdd1D7r1eRLFvKg4qPmgtmP09OO9DzbZoMKqh6h/exec";
 
 let currentCourse = '';
 
@@ -506,17 +506,11 @@ document.getElementById('enrollForm').addEventListener('submit', async function(
 
   const form = e.target;
   const data = {
-    firstname: form.fullname.value,
-    lastname: '',
-    nickname: '',
-    phone: form.phone.value,
-    instagram: form.contact.value,
-    school: currentCourse,
-    grade: '',
-    subject: currentCourse,
-    canTravel: '',
-    canFilm: '',
-    reason: 'สมัครคอร์ส: ' + currentCourse + ' | Email: ' + form.email.value
+    fullname: form.fullname.value,
+    phone:    form.phone.value,
+    email:    form.email.value,
+    contact:  form.contact.value,
+    course:   currentCourse
   };
 
   try {
