@@ -457,7 +457,14 @@ footer strong{color:var(--cyan)}
             <h4>💳 ช่องทางชำระเงิน</h4>
             <p>โอนเงินผ่านพร้อมเพย์</p>
             <div class="payment-number">063-752-9090</div>
-            <p style="margin-top:0.5rem">หลังโอนแล้ว <strong>ส่งสลิปมาที่ Instagram @gutewmua</strong><br>ทีมงานจะส่งลิงก์เข้าเรียนภายใน 24 ชั่วโมงค่ะ</p>
+          </div>
+          <div class="form-field">
+            <label>แนบสลิปโอนเงิน *</label>
+            <input type="file" name="slipFile" id="slipFile" accept="image/*" required
+              style="padding:0.5rem;font-size:0.85rem;cursor:pointer;">
+            <div id="slipPreview" style="margin-top:0.5rem;display:none;">
+              <img id="slipImg" style="max-width:100%;max-height:200px;border-radius:8px;border:1.5px solid #E2E8F0;" />
+            </div>
           </div>
 
           <button type="submit" class="btn-submit-modal" id="enrollBtn">ส่งข้อมูลและรอการยืนยัน →</button>
